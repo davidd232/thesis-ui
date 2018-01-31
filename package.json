@@ -1,0 +1,21 @@
+{
+  "name": "thesis-ui",
+  "version": "1.0.0",
+  "description": "everything pertaining to ui goes here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && npm start && cd ../client && webpack -w "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidd232/thesis-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidd232/thesis-ui/issues"
+  },
+  "homepage": "https://github.com/davidd232/thesis-ui#readme"
+}
