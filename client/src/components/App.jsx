@@ -12,9 +12,10 @@ class App extends Component {
   componentWillMount() {
     this.socket = io('http://localhost:4155', {
       query: {
-        roomId: 'hey'
+        roomId: location.pathname.slice(1)
       }
     });
+    console.log('asdfa', this.socket.query.roomId);
     this.setState({ socket: this.socket });
   }
   render() {

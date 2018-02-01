@@ -25476,9 +25476,10 @@ var App = function (_Component) {
     value: function componentWillMount() {
       this.socket = (0, _socketIo2.default)('http://localhost:4155', {
         query: {
-          roomId: 'hey'
+          roomId: location.pathname.slice(1)
         }
       });
+      console.log('asdfa', this.socket.query.roomId);
       this.setState({ socket: this.socket });
     }
   }, {
